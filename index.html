@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>İbrahim | Phexum</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "white": "#FFFFFF",
+            "primary-text": "#202020",
+            "secondary-text": "#B0B0B0",
+            "surface-grey": "#EFEFEF",
+            "accent-fuchsia": "#E7088D",
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #202020;
+        }
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .accent-link {
+            @apply transition-colors duration-300;
+        }
+        .accent-link:hover {
+            color: #E7088D !important;
+        }
+    </style>
+</head>
+
+<body class="selection:bg-accent-fuchsia/30 selection:text-primary-text">
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-surface-grey">
+    <div class="flex justify-between items-center max-w-5xl mx-auto px-8 py-6">
+      <div class="text-lg font-bold text-primary-text font-['Space_Grotesk'] tracking-tight">me</div>
+      <div class="hidden md:flex gap-8 items-center">
+        <a class="nav-link text-secondary-text accent-link font-['Space_Grotesk'] tracking-tight pb-1"
+          href="#about">About</a>
+        <a class="nav-link text-secondary-text accent-link font-['Space_Grotesk'] tracking-tight pb-1"
+          href="#companies">Companies</a>
+        <a class="nav-link text-secondary-text accent-link font-['Space_Grotesk'] tracking-tight pb-1"
+          href="#experience">Tech Stack</a>
+        <a class="nav-link text-secondary-text accent-link font-['Space_Grotesk'] tracking-tight pb-1"
+          href="#contact">Contact</a>
+        <span class="material-symbols-outlined text-secondary-text">code</span>
+      </div>
+      <div class="md:hidden text-primary-text">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </div>
+  </nav>
+  <main class="max-w-5xl mx-auto px-8 pt-32 md:pt-48">
+    <section class="flex flex-col md:flex-row gap-12 md:gap-20 items-start mb-40" id="hero">
+      <div class="w-full md:w-1/3 aspect-[3/4] overflow-hidden rounded-lg bg-surface-grey">
+        <img alt="İbrahim" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+          src="me.jpg" />
+      </div>
+      <div class="w-full md:w-2/3 flex flex-col justify-center">
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-primary-text mb-8">İbrahim</h1>
+        <p class="text-xl md:text-2xl leading-relaxed text-primary-text/80 mb-6 font-light">
+          From idea to startup — designing the systems that make it work. </p>
+        <p class="text-sm uppercase tracking-[0.2em] text-secondary-text font-medium">
+          Co-founder of Phexum & JoedTech. Focused on SaaS architecture, multi-tenant systems,
+          domain-driven design.
+        </p>
+      </div>
+    </section>
+    <section class="mb-40 grid grid-cols-1 md:grid-cols-12 gap-8" id="about">
+      <div class="md:col-span-4">
+        <h2 class="text-2xl font-semibold tracking-tight text-accent-fuchsia">Technical Philosophy</h2>
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-lg leading-relaxed text-primary-text/80 max-w-2xl mb-4">
+          I specialize in building robust backend systems using Java, NestJS, TypeORM, and PostgreSQL, with a strong
+          focus on
+          Domain-Driven Design (DDD).
+        </p>
+        <p class="text-lg leading-relaxed text-primary-text/80 max-w-2xl mb-4">
+          For me, software is not just about writing code. It's about structuring complexity. I believe systems should
+          reflect the business domain clearly, allowing them to scale without becoming fragile.
+        </p>
+        <p class="text-lg leading-relaxed text-primary-text/80 max-w-2xl">
+          My approach prioritizes clarity, maintainability, and long-term evolution over quick solutions. I aim to build
+          systems that are not only functional, but structurally sound and predictable.
+        </p>
+      </div>
+    </section>
+    <section class="mb-40" id="companies">
+      <h2 class="text-2xl font-semibold tracking-tight text-accent-fuchsia mb-16">Companies & Works</h2>
+      <div class="space-y-12">
+        <div class="group border-b border-surface-grey pb-8 transition-colors hover:border-accent-fuchsia/30">
+          <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+            <h3 class="text-xl font-medium text-primary-text group-hover:text-accent-fuchsia transition-colors">Phexum
+            </h3>
+            <span class="text-xs font-label text-secondary-text uppercase tracking-widest">Core Focus</span>
+          </div>
+          <p class="text-secondary-text mt-2 font-light">Startup Initializer. We design and build the entire technical
+            foundation of startups, covering backend systems, mobile applications, AI integration, and data analytics.
+            Everything delivered ready to scale.</p>
+          <p class="text-secondary-text mt-2 font-light">Phexum focuses on transforming early-stage ideas into fully
+            functional, production-grade systems, allowing founders to focus on growth instead of infrastructure.</p>
+        </div>
+        <div class="group border-b border-surface-grey pb-8 transition-colors hover:border-accent-fuchsia/30">
+          <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+            <h3 class="text-xl font-medium text-primary-text group-hover:text-accent-fuchsia transition-colors">JoedTech
+            </h3>
+            <span class="text-xs font-label text-secondary-text uppercase tracking-widest">Product</span>
+          </div>
+          <p class="text-secondary-text mt-2 font-light">A multi-tenant SaaS platform built for the education industry,
+            combining CRM, LMS, and event management (JAM) into a unified, scalable system with brand-level
+            customization for each organization.</p>
+          <p class="text-secondary-text mt-2 font-light">Currently live and in production, serving multiple
+            organizations with a modular architecture designed for long-term growth.</p>
+        </div>
+        <div class="group border-b border-surface-grey pb-8 transition-colors hover:border-accent-fuchsia/30">
+          <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+            <h3 class="text-xl font-medium text-primary-text group-hover:text-accent-fuchsia transition-colors">Pulse
+            </h3>
+            <span class="text-xs font-label text-secondary-text uppercase tracking-widest">Product</span>
+          </div>
+          <p class="text-secondary-text mt-2 font-light">A Phexum product. AI-powered customer intelligence platform
+            that monitors all written communication channels to detect early signs of churn. Pulse analyzes customer
+            loyalty, uncovers root causes of dissatisfaction, and surfaces actionable KPIs. Includes a built-in survey
+            module for collecting direct customer feedback.</p>
+          <p class="text-secondary-text mt-2 font-light">Pulse also prioritizes which customers need immediate
+            attention, enabling support teams to focus where it matters most. With integrated project management, every
+            insight turns into a trackable action.</p>
+          <p class="text-secondary-text mt-2 font-light">Think of it as measuring your customers' pulse. Catching the
+            warning signs before a heart attack, so your team can act while there's still time.</p>
+        </div>
+        <div class="group border-b border-surface-grey pb-8 transition-colors hover:border-accent-fuchsia/30">
+          <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2">
+            <h3 class="text-xl font-medium text-primary-text group-hover:text-accent-fuchsia transition-colors">VBT</h3>
+            <span class="text-xs font-label text-secondary-text uppercase tracking-widest">Milestone</span>
+          </div>
+          <p class="text-secondary-text mt-2 font-light">Received strategic investment from VBT, marking an important
+            milestone in our journey of building scalable and
+            production-ready systems.
+
+            This milestone reflects both the technical strength of our work and the long-term vision behind the
+            platforms we are
+            developing.</p>
+        </div>
+      </div>
+    </section>
+    <section class="mb-24 flex justify-center">
+      <div class="jogo-card group relative cursor-pointer select-none" onclick="this.classList.toggle('revealed')">
+        <div class="relative overflow-hidden border border-surface-grey rounded-lg px-8 py-6 max-w-sm">
+          <div class="jogo-text transition-all duration-300">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="text-xl font-medium text-primary-text font-['Space_Grotesk']">Jögo</h3>
+              <span class="text-[10px] uppercase tracking-[0.3em] text-secondary-text/40">Friend</span>
+            </div>
+            <p class="text-sm text-secondary-text font-light leading-relaxed">Born from a broken Cat5 cable that refused
+              to be thrown away. A childhood experiment turned quiet companion.</p>
+            <p class="text-[10px] text-secondary-text/30 mt-3 tracking-wider">Waiting to be the mascot of whatever gets
+              built next.</p>
+          </div>
+          <div
+            class="jogo-image absolute inset-0 flex items-center justify-center bg-white opacity-0 transition-all duration-100">
+            <img src="jogo.png" alt="Jögo" class="h-28 md:h-36 object-contain jogo-glitch" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .jogo-card:hover .jogo-text,
+      .jogo-card.revealed .jogo-text {
+        opacity: 0;
+      }
+
+      .jogo-card:hover .jogo-image,
+      .jogo-card.revealed .jogo-image {
+        opacity: 1;
+      }
+
+      .jogo-card:hover .jogo-glitch,
+      .jogo-card.revealed .jogo-glitch {
+        animation: glitch 0.4s steps(2) forwards;
+      }
+
+      @keyframes glitch {
+        0% {
+          clip-path: inset(40% 0 40% 0);
+          transform: translate(-4px, 2px);
+          opacity: 0.6;
+        }
+
+        20% {
+          clip-path: inset(10% 0 60% 0);
+          transform: translate(3px, -1px);
+          opacity: 0.8;
+        }
+
+        40% {
+          clip-path: inset(60% 0 5% 0);
+          transform: translate(-2px, 3px);
+          opacity: 0.5;
+        }
+
+        60% {
+          clip-path: inset(20% 0 30% 0);
+          transform: translate(4px, -2px);
+          opacity: 0.9;
+        }
+
+        80% {
+          clip-path: inset(5% 0 5% 0);
+          transform: translate(-1px, 1px);
+          opacity: 0.95;
+        }
+
+        100% {
+          clip-path: inset(0 0 0 0);
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+    </style>
+    <section class="mb-40 py-20 px-8 bg-surface-grey rounded-xl" id="experience">
+      <div class="flex flex-col items-center text-center">
+        <h2 class="text-sm uppercase tracking-[0.3em] text-secondary-text mb-10 font-bold">Tech Stack</h2>
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 max-w-2xl">
+          <span class="text-lg font-medium text-primary-text">Java</span>
+          <span class="text-lg font-medium text-primary-text">NestJS</span>
+          <span class="text-lg font-medium text-primary-text">React</span>
+          <span class="text-lg font-medium text-primary-text">TypeScript</span>
+          <span class="text-lg font-medium text-primary-text">PostgreSQL</span>
+          <span class="text-lg font-medium text-primary-text">Docker</span>
+          <span class="text-lg font-medium text-primary-text">Traefik</span>
+          <span class="text-lg font-medium text-primary-text">Elasticsearch</span>
+          <span class="text-lg font-medium text-primary-text">Redis</span>
+          <span class="text-lg font-medium text-primary-text">RabbitMQ</span>
+        </div>
+      </div>
+    </section>
+    <section class="mb-40 text-center" id="contact">
+      <h2 class="text-4xl font-bold tracking-tight text-primary-text mb-8">Get in touch.</h2>
+      <p class="text-secondary-text mb-12 max-w-md mx-auto">Open to partnerships, consulting, training, and building
+        products from zero to launch.</p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+        <a class="group flex items-center gap-2 text-primary-text font-medium accent-link"
+          href="mailto:info@phexum.com">
+          <span
+            class="material-symbols-outlined text-secondary-text group-hover:text-accent-fuchsia">alternate_email</span>
+          <span>hello</span>
+        </a>
+        <a class="group flex items-center gap-2 text-primary-text font-medium accent-link" href="https://phexum.com"
+          target="_blank">
+          <span class="material-symbols-outlined text-secondary-text group-hover:text-accent-fuchsia">home</span>
+          <span>nest</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-surface-grey py-16">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto px-8 gap-4">
+      <div class="text-secondary-text font-['Inter'] text-sm tracking-wide">
+        © 2026 İbrahim
+      </div>
+      <div class="flex gap-6">
+        <a class="text-secondary-text accent-link hover:underline underline-offset-4 decoration-accent-fuchsia font-['Inter'] text-sm tracking-wide"
+          href="https://github.com/ibrahimAltinoluk" target="_blank">GitHub</a>
+        <a class="text-secondary-text accent-link hover:underline underline-offset-4 decoration-accent-fuchsia font-['Inter'] text-sm tracking-wide"
+          href="https://www.linkedin.com/in/ibrahimaltinoluk" target="_blank">LinkedIn</a>
+        <a class="text-secondary-text accent-link hover:underline underline-offset-4 decoration-accent-fuchsia font-['Inter'] text-sm tracking-wide"
+          href="https://phexum.com" target="_blank">Phexum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    const linkedSections = Array.from(navLinks).map(link => link.getAttribute('href').substring(1));
+
+    function updateActiveLink() {
+      let current = '';
+      const atBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50;
+      if (atBottom) {
+        current = linkedSections[linkedSections.length - 1];
+      } else {
+        const midScreen = window.scrollY + window.innerHeight / 3;
+        let minDist = Infinity;
+        linkedSections.forEach(id => {
+          const section = document.getElementById(id);
+          if (!section) return;
+          const dist = Math.abs(section.offsetTop - midScreen);
+          if (dist < minDist) {
+            minDist = dist;
+            current = id;
+          }
+        });
+      }
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href').substring(1);
+        if (href === current) {
+          link.classList.add('text-primary-text', 'border-b-2', 'border-accent-fuchsia');
+          link.classList.remove('text-secondary-text');
+        } else {
+          link.classList.remove('text-primary-text', 'border-b-2', 'border-accent-fuchsia');
+          link.classList.add('text-secondary-text');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    updateActiveLink();
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').substring(1);
+        const section = document.getElementById(id);
+        if (!section) return;
+        section.scrollIntoView({ behavior: 'smooth' });
+        navLinks.forEach(l => {
+          l.classList.remove('text-primary-text', 'border-b-2', 'border-accent-fuchsia');
+          l.classList.add('text-secondary-text');
+        });
+        link.classList.add('text-primary-text', 'border-b-2', 'border-accent-fuchsia');
+        link.classList.remove('text-secondary-text');
+      });
+    });
+  </script>
+</body>
+
+</html>
